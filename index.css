@@ -1,0 +1,179 @@
+/* .html,body{
+    background-color: rgb(215, 212, 212);
+    margin: 3rem;
+}
+
+.name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    /* font-weight: bold; */
+/* } */
+/* .address{
+    display: flex;
+    justify-content: center;
+}
+
+.email{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+    /* margin: 1rem; */
+/* } */
+
+/* .item::after{
+content: "|";
+margin: 1rem;
+}
+.item:last-child::after {
+  content: '';
+} */
+/* 
+ 
+.college{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+} */
+/* 
+.course h5 {
+    margin-top: 0.1rem;
+} */
+
+/* .class{
+    display: flex;
+    justify-content: space-between;
+        margin-top: -1rem;
+} */
+
+/* p {
+    margin-top: 0rem;
+} */
+/* 
+.item a{
+    text-decoration: none;
+    color: black;
+}
+ 
+.lib h5{
+    margin-top: -1rem; */
+/* }
+.Technology h5{
+    margin-top: -1rem;
+} */ 
+
+html, body {
+    background-color: rgb(215, 212, 212);
+    margin: 2rem;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* Common center layout */
+.name, .address, .email, .college {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap; /* For responsiveness */
+    width: 100%;
+}
+
+/* Responsive font size */
+.name {
+    font-size: 2rem;
+}
+
+.email {
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.item::after {
+    content: "|";
+    margin: 0 0.5rem;
+}
+
+.item:last-child::after {
+    content: '';
+}
+
+/* Anchor style */
+.item a {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+}
+
+/* College section */
+.course h5,
+.lib h5,
+.Technology h5 {
+    margin-top: -1rem;
+}
+
+/* Class layout */
+.class {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: -0.5rem;
+    width: 100%;
+}
+
+p {
+    margin: 0.2rem 0;
+}
+
+/* Make images, divs, and text scale better */
+img, div, p, h5 {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+/* ✅ Responsive breakpoints */
+@media (max-width: 768px) {
+    html, body {
+        margin: 1rem;
+    }
+
+    .name {
+        font-size: 1.5rem;
+    }
+
+    .class {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .email {
+        flex-direction: column;
+    }
+
+    .item::after {
+        margin: 0.3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .name {
+        font-size: 1.2rem;
+    }
+
+    .item a {
+        font-size: 0.9rem;
+    }
+}
+
+.ach h5 {
+    margin-top: -1rem;
+}
+
+.course h5 {
+    margin-top: 1rem;
+}
